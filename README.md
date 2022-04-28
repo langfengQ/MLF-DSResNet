@@ -17,10 +17,10 @@ If you find this repository useful, please consider citing the following paper:
 
 ## 2. Datasets
 * Download link of DVS-gesture: https://research.ibm.com/interactive/dvsgesture/.
-Put file `DvsGesture.tar.gz` in the path `.data/DVS_Gesture/source_DvsGesture/`, then unzip `DvsGesture.tar.gz`.
+Put file `DvsGesture.tar.gz` in the path `./data/DVS_Gesture/source_DvsGesture/`, then unzip `DvsGesture.tar.gz`.
 
 * Download link of CIFAR10-DVS: https://figshare.com/articles/dataset/CIFAR10-DVS_New/4724671/2.
-Put file `airplane.zip`～`horse.zip` in the path `.data/DVS_CIFAR10/source_DvsCIFAR10/`, then unzip `airplane.zip`～`horse.zip`.
+Put file `airplane.zip`～`horse.zip` in the path `./data/DVS_CIFAR10/source_DvsCIFAR10/`, then unzip `airplane.zip`～`horse.zip`.
 
 * CIFAR10 dataset can be downloaded online.
 
