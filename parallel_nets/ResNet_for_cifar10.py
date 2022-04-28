@@ -29,7 +29,7 @@ class BasicBlock(nn.Module):
 
         if self.modified:
             out = self.spike_func(out)
-            out += self.shortcut(x)
+            out += self.shortcut(x)         # Equivalent to union of all spikes
         else:
             out += self.shortcut(x)
             out = self.spike_func(out)
