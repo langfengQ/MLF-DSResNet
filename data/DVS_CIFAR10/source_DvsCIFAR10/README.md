@@ -1,0 +1,2 @@
+Download link of CIFAR10-DVS: https://figshare.com/articles/dataset/CIFAR10-DVS_New/4724671/2.
+Put file `airplane.zip`～`horse.zip` in this folder `.data/DVS_CIFAR10/source_DvsCIFAR10/`, then unzip `airplane.zip`～`horse.zip`.
