@@ -11,12 +11,8 @@ If you find this repository useful, please consider citing the following paper:
   author    = {Feng, Lang and Liu, Qianhui and Tang, Huajin and Ma, De and Pan, Gang},
   booktitle = {Proceedings of the Thirty-First International Joint Conference on
                Artificial Intelligence, {IJCAI-22}},
-  publisher = {International Joint Conferences on Artificial Intelligence Organization},
-  editor    = {Lud De Raedt},
   pages     = {2471--2477},
   year      = {2022},
-  month     = {7},
-  note      = {Main Track}
   doi       = {10.24963/ijcai.2022/343},
   url       = {https://doi.org/10.24963/ijcai.2022/343},
 }
