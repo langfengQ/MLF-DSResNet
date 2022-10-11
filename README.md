@@ -2,6 +2,21 @@
 ## IJCAI 2022
 This repository contains Python implementation of MLF & spiking DS-ResNet.
 
+## 1. Publication
+If you find this repository useful, please consider citing the following paper:
+
+<pre>
+@inproceedings{lang2022multi,
+  title     = {Multi-Level Firing with Spiking DS-ResNet: Enabling Better and Deeper Directly-Trained Spiking Neural Networks},
+  author    = {Feng, Lang and Liu, Qianhui and Tang, Huajin and Ma, De and Pan, Gang},
+  booktitle = {Proceedings of the Thirty-First International Joint Conference on
+               Artificial Intelligence, {IJCAI-22}},
+  pages     = {2471--2477},
+  year      = {2022},
+  doi       = {10.24963/ijcai.2022/343},
+  url       = {https://doi.org/10.24963/ijcai.2022/343},
+}
+</pre>
 
 ## 2. Datasets
 * Download link of DVS-gesture: https://research.ibm.com/interactive/dvsgesture/.
@@ -34,18 +49,3 @@ python train_for_cifar10.py
 python train_for_gesture.py
 python train_for_dvscifar10.py
 ```
-## 1. Publication
-If you find this repository useful, please consider citing the following paper:
-
-<pre>
-@inproceedings{lang2022multi,
-  title     = {Multi-Level Firing with Spiking DS-ResNet: Enabling Better and Deeper Directly-Trained Spiking Neural Networks},
-  author    = {Feng, Lang and Liu, Qianhui and Tang, Huajin and Ma, De and Pan, Gang},
-  booktitle = {Proceedings of the Thirty-First International Joint Conference on
-               Artificial Intelligence, {IJCAI-22}},
-  pages     = {2471--2477},
-  year      = {2022},
-  doi       = {10.24963/ijcai.2022/343},
-  url       = {https://doi.org/10.24963/ijcai.2022/343},
-}
-</pre>
