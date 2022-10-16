@@ -17,11 +17,17 @@ class BasicBlock(nn.Module):
         self.modified = modified
 
         if stride != 1 or in_planes != planes:
-            self.shortcut = nn.Sequential(
-                nn.Conv2d(in_planes, planes, 1, stride, bias=False),
-                tdBatchNorm(nn.BatchNorm2d(planes)),
-                MLF_unit()
-            )
+            if self.modified:
+                self.shortcut = nn.Sequential(
+                    nn.Conv2d(in_planes, planes, 1, stride, bias=False),
+                    tdBatchNorm(nn.BatchNorm2d(planes)),
+                    MLF_unit()
+                )
+            else:
+                self.shortcut_ = nn.Sequential(
+                    nn.Conv2d(in_planes, planes, 1, stride, bias=False),
+                    tdBatchNorm(nn.BatchNorm2d(planes)),
+                )
 
     def forward(self, x):
         out = self.spike_func(self.bn1(self.conv1(x)))
