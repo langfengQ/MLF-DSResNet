@@ -24,7 +24,7 @@ class BasicBlock(nn.Module):
                     MLF_unit()
                 )
             else:
-                self.shortcut_ = nn.Sequential(
+                self.shortcut = nn.Sequential(
                     nn.Conv2d(in_planes, planes, 1, stride, bias=False),
                     tdBatchNorm(nn.BatchNorm2d(planes)),
                 )
