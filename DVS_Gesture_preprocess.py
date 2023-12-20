@@ -166,4 +166,4 @@ def create_hdf5(path, save_path):
 
 if __name__ == '__main__':
     path = os.getcwd() + os.sep + 'data' + os.sep + 'DVS_Gesture'
-    create_hdf5(os.path.join(path, 'source_DvsGesture'), path)
+    create_hdf5(os.path.join(path, 'source_DvsGesture/DvsGesture'), path)
