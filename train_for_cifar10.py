@@ -111,8 +111,9 @@ if __name__ == '__main__':
     torch.manual_seed(1)
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
     writer = None
+    writer_path = './summaries/cifar10/result_cifar10' + '_' + str(len(os.listdir('./summaries/cifar10/')))
     if args.tensorboard:
-        writer = SummaryWriter('./summaries/cifar10/result_cifar10')
+        writer = SummaryWriter(writer_path)
     # model = VGG16().to(device)
     model = resnet20().to(device)
 

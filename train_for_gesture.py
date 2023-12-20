@@ -102,9 +102,10 @@ if __name__ == '__main__':
     torch.manual_seed(2)
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
     writer = None
+    writer_path = './summaries/dvs_gesture/result_gesture' + '_' + str(len(os.listdir('./summaries/dvs_gesture')))
     if args.tensorboard:
-        writer = SummaryWriter('./summaries/dvs_gesture/result_gesture')
-
+        writer = SummaryWriter(writer_path)
+        
     model = resnet20().to(device)
 
     train_loader, test_loader, start_epoch = data_model_load(args, model, kwargs)

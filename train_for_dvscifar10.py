@@ -101,8 +101,9 @@ if __name__ == '__main__':
     kwargs = {'num_workers': 1, 'pin_memory': True} if use_cuda else {}
 
     writer = None
+    writer_path = './summaries/dvs_cifar10/result_dvscifar10' + '_' + str(len(os.listdir('./summaries/dvs_cifar10')))
     if args.tensorboard:
-        writer = SummaryWriter('./summaries/dvs_cifar10/result_dvscifar10')
+        writer = SummaryWriter(writer_path)
 
     model = resnet14().to(device)
 
